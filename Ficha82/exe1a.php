@@ -4,7 +4,7 @@
     <body>
         <?php
                 //Aqui ta a declarar a variavel e a fazer a variavel da sessão fique com o mesmo valor da variavel var_sessao
-                $var_sessao = "Óla programadores de PHP!!!";
+                $var_sessao = "Olá programadores de PHP!!!";
                 $_SESSION['var_sessao'] = $var_sessao;
         ?>
         <!--Vai para o exe1b-->
