@@ -24,7 +24,7 @@
                 echo "Bem vindo! Esta é a sua ", $n_visitas,  "ª visita. O último acesso foi em ", $_COOKIE['data'];
             }
 
-            setcookie("data", date("d/m/y - h:i:s"));
+            setcookie("data", date("d/m/y - H:i:s"));
     ?>
 </body>
 </html>
