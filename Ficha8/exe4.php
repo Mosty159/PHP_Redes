@@ -21,11 +21,11 @@
 
     
 
-            echo '<img src="cookie.jpg" alt="Flowers in Chania" width="460" height="345">';
+            echo '<img src="cookie.jpg" alt="Cookie" width="460" height="345">';
   
             echo '<Form action = "' , $_SERVER['PHP_SELF'],'" method="POST">';
                     echo '<input type="submit" name = "Reiniciar" value = "Reiniciar">';
-                    echo '<input type="submit" name = "Reiniciar" value = "Continuar">';
+                    echo '<input type="submit" name = "Continuar" value = "Continuar">';
             echo '</Form>';
 
             if(isset($_POST['Reiniciar'])){
