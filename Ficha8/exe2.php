@@ -7,20 +7,20 @@
 <body>
     <?php
 
-            if(isset($_COOKIE['n_visitas'])) {
-                $n_visitas = $_COOKIE['n_visitas'] + 1;
+            if(isset($_COOKIE['nvisitas'])) {
+                $nvisitas = $_COOKIE['nvisitas'] + 1;
             }
             else{
-                $n_visitas = 1;
+                $nvisitas = 1;
             }
 
-            setcookie("n_visitas", $n_visitas, time() + 3600 * 3600);
+            setcookie("nvisitas", $nvisitas, time() + 3600 * 3600);
 
-            if($n_visitas == 1){
-                echo "Bem vindo, Está é a ", $n_visitas, "ª vez que visita este site";
+            if($nvisitas == 1){
+                echo "Bem vindo, Está é a ", $nvisitas, "ª vez que visita este site";
             }
             else{
-                echo "Bem vindo de novo ao site! Esta é a sua ", $n_visitas,  "ª visita";
+                echo "Bem vindo de novo ao site! Esta é a sua ", $nvisitas,  "ª visita";
             }
     ?>
 </body>

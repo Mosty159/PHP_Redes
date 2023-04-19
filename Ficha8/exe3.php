@@ -6,6 +6,7 @@
 </head>
 <body>
     <?php
+            date_default_timezone_set("Portugal");
 
             if(isset($_COOKIE['n_visitas'])) {
                 $n_visitas = $_COOKIE['n_visitas'] + 1;

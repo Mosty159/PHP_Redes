@@ -9,14 +9,14 @@
 
             date_default_timezone_set("Portugal");
 
-            if(isset($_COOKIE['n_visitas'])) {
-                $n_visitas = $_COOKIE['n_visitas'] + 1;
+            if(isset($_COOKIE['visitas'])) {
+                $visitas = $_COOKIE['visitas'] + 1;
             }
             else{
-                $n_visitas = 1;
+                $visitas = 1;
             }
 
-            setcookie("n_visitas", $n_visitas, time() + 3600 * 3600);
+            setcookie("visitas", $visitas, time() + 3600 * 3600);
 
 
             echo "<h3>BEM VINDO ÀS COOKIES!!!<br></h3>";
@@ -31,16 +31,16 @@
             echo '</Form>';
 
             if(isset($_POST['Reiniciar'])){
-                setcookie("n_visitas", "" , time() - 3600 * 3600);
+                setcookie("visitas", "" , time() - 3600 * 3600);
                 setcookie("data", "", time() - 3600 * 3600);
-                $n_visitas = 1;
+                $visitas = 1;
             }
     
-            if($n_visitas == 1){
-                echo "Está é a ", $n_visitas, "ª visita";
+            if($visitas == 1){
+                echo "Está é a ", $visitas, "ª visita";
             }
             else{
-                echo "Esta é a sua ", $n_visitas,  "ª visita. O último acesso foi em ", $_COOKIE['data'];
+                echo "Esta é a sua ", $visitas,  "ª visita. O último acesso foi em ", $_COOKIE['data'];
             }
 
             setcookie("data", date("d/m/y - H:i:s"));
